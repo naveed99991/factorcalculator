@@ -102,7 +102,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="relative bg-white rounded-2xl shadow-lg">
+            <div className="calc-card relative bg-white rounded-2xl shadow-lg">
               <FactorCalculator initialValue={72} />
             </div>
           </div>
