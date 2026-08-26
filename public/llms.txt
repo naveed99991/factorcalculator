@@ -1,0 +1,78 @@
+# Factor Calculator
+
+> Free math tools for finding factors, prime factorization, GCF, LCM, and
+> divisor properties of whole numbers. Every calculator shows step-by-step
+> working, not just the answer.
+
+Site: https://factorcalculator.org
+Contact: contact@factorcalculator.org
+Language: English
+Scope: Integer factorization and divisibility (not algebraic/polynomial factoring)
+
+## Calculators
+
+- [Factor Calculator](https://factorcalculator.org/): All factors of any number
+  up to one trillion, with factor pairs, prime factorization, and a factor tree.
+- [Prime Factorization](https://factorcalculator.org/prime-factorization/):
+  Breaks a number into primes with step-by-step division, exponent form, and
+  divisor-count derivation.
+- [GCF Calculator](https://factorcalculator.org/gcf-calculator/): Greatest common
+  factor (also HCF/GCD) of 2-5 numbers via prime factorization, the Euclidean
+  algorithm, and factor listing.
+- [LCM Calculator](https://factorcalculator.org/lcm-calculator/): Least common
+  multiple of 2-5 numbers via prime factorization, the GCF formula, and listing
+  multiples.
+- [Common Factors](https://factorcalculator.org/common-factors/): Every shared
+  factor of two or more numbers, not only the greatest, with a side-by-side
+  comparison.
+- [Divisor Calculator](https://factorcalculator.org/divisors/): Divisor count
+  d(n), divisor sum σ(n), aliquot sum, and classification as perfect, abundant,
+  or deficient.
+
+## Number reference pages
+
+Individual pages exist for every integer from 1 to 1200, at the URL pattern
+https://factorcalculator.org/factors-of-{n}/
+
+Each page contains: the complete factor list, factor pairs, prime factorization
+with division steps, a factor tree, a properties table (divisor count, divisor
+sum, aliquot sum, parity, perfect square/cube status, classification), notes
+specific to that number, and FAQs answered for that number.
+
+Examples:
+- https://factorcalculator.org/factors-of-12/
+- https://factorcalculator.org/factors-of-100/
+- https://factorcalculator.org/factors-of-720/
+
+## How results are computed
+
+- Factors: trial division up to the square root, collecting divisor/quotient pairs
+- Prime factorization: repeated division by the smallest prime, trial division to sqrt(n)
+- GCF: Euclidean algorithm, applied cumulatively for more than two numbers
+- LCM: computed as (a x b) / gcd(a, b), applied pairwise
+- Divisor count d(n): product of (exponent + 1) across the prime factorization
+- Divisor sum sigma(n): product of (p^(e+1) - 1) / (p - 1) across prime powers
+
+All calculations run client-side in the browser. Values are verified against
+OEIS A000005 (divisor count) and OEIS A000203 (divisor sum) in automated tests.
+
+## Limits
+
+- Positive integers only; decimals and fractions are rejected with an explanation
+- Maximum input: 1,000,000,000,000 (one trillion)
+- Number reference pages exist for 1-1200 only
+- This site does not handle algebraic or polynomial factoring (e.g. x^2 - 4)
+
+## Site pages
+
+- [About](https://factorcalculator.org/about/)
+- [Contact](https://factorcalculator.org/contact/)
+- [Sitemap](https://factorcalculator.org/sitemap/)
+- [Privacy Policy](https://factorcalculator.org/privacy-policy/)
+- [Terms of Use](https://factorcalculator.org/terms/)
+- [Disclaimer](https://factorcalculator.org/disclaimer/)
+
+## Usage
+
+Content may be cited with attribution and a link to the source page.
+Mathematical facts themselves are free to use without attribution.
