@@ -244,3 +244,25 @@
     scroll-behavior: auto !important;
   }
 }
+/* -------------------------------------------------------------
+ * Breathing room for calculator result sections
+ * ----------------------------------------------------------- */
+.result-value {
+  padding: 1.125rem 1.375rem !important;
+  line-height: 2 !important;
+  letter-spacing: 0.04em !important;
+}
+
+/* Give result headings and their content left/right breathing room */
+.result-value,
+table th,
+table td {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+table th,
+table td {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
