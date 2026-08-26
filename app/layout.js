@@ -8,6 +8,7 @@ import {
 } from '../lib/schema';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
 // Body font — optimized for reading long content
@@ -111,6 +112,7 @@ export default function RootLayout({ children }) {
         <div className="flex-1">{children}</div>
         <Footer />
       </body>
+      {siteConfig.gaId ? <GoogleAnalytics gaId={siteConfig.gaId} /> : null}
     </html>
   );
 }
