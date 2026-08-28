@@ -3,6 +3,7 @@ import MathBackdrop from '../components/MathBackdrop';
 import ContentSections from '../components/ContentSections';
 import FAQAccordion from '../components/FAQAccordion';
 import AdSlot from '../components/AdSlot';
+import AskBox from '../components/AskBox';
 import { HOMEPAGE_FAQS } from '../components/homepageFaqs';
 import { siteConfig, absoluteUrl, nowIso } from '../lib/siteConfig';
 import {
@@ -43,7 +44,7 @@ function buildPageSchema() {
     name: 'Factor Calculator',
     url,
     description:
-      'Free online calculator that finds all factors, prime factorization, factor pairs, and factor tree of any positive integer up to one trillion.',
+      'Free online calculator that finds all factors, prime factorization, factor pairs, and factor tree of any positive integer up to one trillion. Also answers factor questions asked in plain English.',
     applicationCategory: 'EducationalApplication',
   });
 
@@ -110,8 +111,19 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Ask a question in plain English */}
+        <section className="container-prose pt-10">
+          <h2 className="mt-0 mb-1 text-xl sm:text-2xl">Have a word problem?</h2>
+          <p className="mt-0 mb-4 text-sm text-ink-muted">
+            Type a factor question the way it appears in your homework. Every
+            answer comes with the working shown, so you can check the method as
+            well as the result.
+          </p>
+          <AskBox />
+        </section>
+
         {/* Answer-first paragraph — narrow */}
-        <div className="container-prose pt-8">
+        <div className="container-prose pt-10">
           <p className="text-base text-ink-soft leading-relaxed">
             The <strong>Factor Calculator</strong> above finds every factor of
             any whole number up to one trillion, along with its prime

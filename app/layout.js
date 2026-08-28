@@ -8,6 +8,7 @@ import {
 } from '../lib/schema';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import FloatingAsk from '../components/FloatingAsk';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
@@ -111,6 +112,7 @@ export default function RootLayout({ children }) {
         <Header />
         <div className="flex-1">{children}</div>
         <Footer />
+        <FloatingAsk />
       </body>
       {siteConfig.gaId ? <GoogleAnalytics gaId={siteConfig.gaId} /> : null}
     </html>
