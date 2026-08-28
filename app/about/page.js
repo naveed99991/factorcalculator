@@ -4,9 +4,9 @@ import { siteConfig, absoluteUrl, nowIso } from '../../lib/siteConfig';
 import { buildWebPage, buildSchemaGraph, serializeSchema } from '../../lib/schema';
 
 export const metadata = {
-    title: 'About Factor Calculator',
+    title: 'About',
     description:
-        'About Factor Calculator — free math tools for factors, prime factorization, GCF, LCM, and divisor properties, built for students and teachers.',
+        'Free math tools for factors, prime factorization, GCF, LCM and divisors — with step-by-step working. Built for students, teachers and learners.',
     alternates: { canonical: absoluteUrl('/about/') },
 };
 

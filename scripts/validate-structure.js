@@ -12,6 +12,9 @@ const path = require('path');
 
 const BUILD_DIR = path.join(process.cwd(), '.next', 'server', 'app');
 
+// Next.js internals that are never crawled and have no URL
+const SKIP_FILES = new Set(['_global-error.html', '_not-found.html']);
+
 let errors = 0;
 let warnings = 0;
 
@@ -35,7 +38,10 @@ function collectHtmlFiles(dir, acc = []) {
         const full = path.join(dir, entry.name);
         if (entry.isDirectory()) {
             collectHtmlFiles(full, acc);
-        } else if (entry.name.endsWith('.html')) {
+        } else if (
+            entry.name.endsWith('.html') &&
+            entry.name !== '_global-error.html'
+        ) {
             acc.push(full);
         }
     }

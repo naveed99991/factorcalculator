@@ -13,9 +13,11 @@ import {
 } from '../../lib/schema';
 
 export const metadata = {
-    title: 'GCF Calculator — Greatest Common Factor',
+    title: {
+        absolute: 'GCF Calculator — Greatest Common Factor (HCF)',
+    },
     description:
-        'Free GCF calculator. Find the greatest common factor of 2-5 numbers using prime factorization, the Euclidean algorithm, and factor listing.',
+        'Find the GCF of two or more numbers three ways: prime factorization, the Euclidean algorithm and factor listing — each with full working shown.',
     alternates: { canonical: absoluteUrl('/gcf-calculator/') },
     openGraph: {
         title: 'GCF Calculator — Greatest Common Factor (HCF)',

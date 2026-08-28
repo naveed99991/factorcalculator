@@ -6,7 +6,7 @@ import { buildWebPage, buildSchemaGraph, serializeSchema } from '../../lib/schem
 export const metadata = {
     title: 'Disclaimer',
     description:
-        'Disclaimer for Factor Calculator — the limits of what our free math tools provide and how results should be used.',
+        'Factor Calculator is an educational tool. What our calculators cover, their limits, and why results should be verified for anything important.',
     alternates: { canonical: absoluteUrl('/disclaimer/') },
 };
 

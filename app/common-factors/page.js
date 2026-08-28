@@ -13,9 +13,11 @@ import {
 } from '../../lib/schema';
 
 export const metadata = {
-    title: 'Common Factors Calculator',
+    title: {
+        absolute: 'Common Factors Calculator — Every Shared Factor',
+    },
     description:
-        'Find every common factor of two or more numbers, not just the greatest. See the full shared factor list, count, sum, and a side-by-side factor comparison.',
+        'List every factor two or more numbers share, not just the greatest. Side-by-side comparison, shared factor count and full working shown.',
     alternates: { canonical: absoluteUrl('/common-factors/') },
     openGraph: {
         title: 'Common Factors Calculator — Every Shared Factor',

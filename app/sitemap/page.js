@@ -6,7 +6,7 @@ import { buildWebPage, buildSchemaGraph, serializeSchema } from '../../lib/schem
 export const metadata = {
     title: 'Sitemap — All Pages',
     description:
-        'Browse every page on Factor Calculator: all six calculators, plus factor pages for every number from 1 to 1200.',
+        'Every page on Factor Calculator: six calculators plus a dedicated factor page for every number from 1 to 1200. Browse by number range.',
     alternates: { canonical: absoluteUrl('/sitemap/') },
 };
 

@@ -13,9 +13,11 @@ import {
 } from '../../lib/schema';
 
 export const metadata = {
-    title: 'LCM Calculator — Least Common Multiple',
+    title: {
+        absolute: 'LCM Calculator — Least Common Multiple',
+    },
     description:
-        'Free LCM calculator. Find the least common multiple of 2-5 numbers using prime factorization, the GCF formula, and listing multiples.',
+        'Find the LCM of two or more numbers using prime factorization, the GCF formula, or listing multiples. Every step shown. Free and instant.',
     alternates: { canonical: absoluteUrl('/lcm-calculator/') },
     openGraph: {
         title: 'LCM Calculator — Least Common Multiple',

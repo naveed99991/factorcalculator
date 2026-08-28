@@ -4,9 +4,9 @@ import { siteConfig, absoluteUrl, nowIso } from '../../lib/siteConfig';
 import { buildWebPage, buildSchemaGraph, serializeSchema } from '../../lib/schema';
 
 export const metadata = {
-    title: 'Contact Factor Calculator',
+    title: 'Contact',
     description:
-        'Get in touch with Factor Calculator — report an error, suggest a feature, or ask a question about any of our free math tools.',
+        'Report an error, suggest a calculator, or ask a question about any of our free math tools. Corrections to calculations get priority.',
     alternates: { canonical: absoluteUrl('/contact/') },
 };
 

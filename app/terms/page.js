@@ -6,7 +6,7 @@ import { buildWebPage, buildSchemaGraph, serializeSchema } from '../../lib/schem
 export const metadata = {
     title: 'Terms of Use',
     description:
-        'Terms of Use for Factor Calculator — the conditions that apply when you use this website and its free math tools.',
+        'The conditions that apply when you use Factor Calculator — permitted use, accuracy of results, content ownership and limitation of liability.',
     alternates: { canonical: absoluteUrl('/terms/') },
 };
 

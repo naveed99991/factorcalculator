@@ -6,10 +6,9 @@ import { buildWebPage, buildSchemaGraph, serializeSchema } from '../../lib/schem
 export const metadata = {
     title: 'Privacy Policy',
     description:
-        'Privacy Policy for Factor Calculator — what data we collect, how cookies and analytics are used, and your rights over your information.',
+        'How Factor Calculator handles data: calculator inputs are never sent to a server. Details on cookies, analytics, advertising and your choices.',
     alternates: { canonical: absoluteUrl('/privacy-policy/') },
 };
-
 const LAST_UPDATED = 'August 26, 2026';
 
 const OPT_OUT_LINKS = [

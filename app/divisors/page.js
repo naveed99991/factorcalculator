@@ -13,14 +13,16 @@ import {
 } from '../../lib/schema';
 
 export const metadata = {
-    title: 'Divisor Calculator — Count & Sum',
+    title: {
+        absolute: 'Divisor Calculator — Count, Sum & Properties',
+    },
     description:
-        'Find all divisors of any number, plus divisor count d(n), divisor sum, aliquot sum, and classification as perfect, abundant, or deficient.',
+        'Find every divisor of a number plus divisor count, divisor sum, aliquot sum, and whether it is perfect, abundant or deficient. Working shown.',
     alternates: { canonical: absoluteUrl('/divisors/') },
     openGraph: {
         title: 'Divisor Calculator — Count, Sum & Properties',
         description:
-            'All divisors of any number, with divisor count, divisor sum, and number classification.',
+            'All divisors of any number, with divisor count, divisor sum and number classification.',
         url: absoluteUrl('/divisors/'),
         type: 'website',
     },

@@ -13,14 +13,16 @@ import {
 } from '../../lib/schema';
 
 export const metadata = {
-    title: 'Prime Factorization Calculator',
+    title: {
+        absolute: 'Prime Factorization Calculator with Steps',
+    },
     description:
-        'Free prime factorization calculator. Break any number into primes with step-by-step division, exponent form, factor tree, and divisor count.',
+        'Break any number into its prime factors with every division step shown, plus exponent form, factor tree and divisor count. Free and instant.',
     alternates: { canonical: absoluteUrl('/prime-factorization/') },
     openGraph: {
-        title: 'Prime Factorization Calculator — Factor Trees & Steps',
+        title: 'Prime Factorization Calculator with Steps',
         description:
-            'Break any number into its prime factors with step-by-step working and a visual factor tree.',
+            'Break any number into primes with step-by-step division and a visual factor tree.',
         url: absoluteUrl('/prime-factorization/'),
         type: 'website',
     },

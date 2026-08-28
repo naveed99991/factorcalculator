@@ -15,15 +15,15 @@ import {
 
 export const metadata = {
   title: {
-    absolute: 'Factor Calculator — Find All Factors of Any Number',
+    absolute: 'Factor Calculator — Find Factors of Any Number',
   },
   description:
-    'Free Factor Calculator. Find all factors, prime factorization, factor pairs, and factor tree of any number with step-by-step working.',
+    'Find all factors, factor pairs, prime factorization and a factor tree for any number, with the full working shown. Free, instant, no sign-up.',
   alternates: { canonical: absoluteUrl('/') },
   openGraph: {
-    title: 'Factor Calculator — Find All Factors of Any Number',
+    title: 'Factor Calculator — Find Factors of Any Number',
     description:
-      'Free Factor Calculator with prime factorization, factor pairs, factor tree, and step-by-step working.',
+      'All factors, factor pairs, prime factorization and factor tree for any number, with full step-by-step working.',
     url: absoluteUrl('/'),
     type: 'website',
   },
