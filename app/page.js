@@ -14,7 +14,9 @@ import {
 } from '../lib/schema';
 
 export const metadata = {
-  title: 'Factor Calculator — Find All Factors of Any Number Instantly',
+  title: {
+    absolute: 'Factor Calculator — Find All Factors of Any Number',
+  },
   description:
     'Free Factor Calculator. Find all factors, prime factorization, factor pairs, and factor tree of any number with step-by-step working.',
   alternates: { canonical: absoluteUrl('/') },
