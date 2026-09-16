@@ -1,50 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Static HTML export — no server runtime needed.
+  // Every page is pre-rendered, so Cloudflare serves plain files from its CDN.
+  output: 'export',
+
   reactStrictMode: true,
   poweredByHeader: false,
-  compress: true,
   trailingSlash: true,
 
   images: {
-    formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 2592000,
+    // Static export can't use the Next.js image optimizer
+    unoptimized: true,
   },
 
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
-        ],
-      },
-      {
-        source: '/robots.txt',
-        headers: [{ key: 'Cache-Control', value: 'public, max-age=3600' }],
-      },
-      {
-        source: '/sitemap.xml',
-        headers: [{ key: 'Cache-Control', value: 'public, max-age=3600' }],
-      },
-      {
-        source: '/llms.txt',
-        headers: [{ key: 'Cache-Control', value: 'public, max-age=3600' }],
-      },
-    ];
-  },
-
-  async redirects() {
-    return [
-      { source: '/home', destination: '/', permanent: true },
-      { source: '/index', destination: '/', permanent: true },
-      { source: '/factors', destination: '/', permanent: true },
-      { source: '/hcf-calculator', destination: '/gcf-calculator/', permanent: true },
-      { source: '/hcf', destination: '/gcf-calculator/', permanent: true },
-    ];
-  },
+  // headers() and redirects() don't run in static export.
+  // Cloudflare handles both via public/_headers and public/_redirects.
 };
 
 module.exports = nextConfig;

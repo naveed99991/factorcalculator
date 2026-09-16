@@ -2,7 +2,7 @@
   "name": "factorcalculator",
   "version": "1.0.0",
   "private": true,
-  "description": "Factor Calculator — find factors, prime factorization, GCF, LCM, and more",
+  "description": "Factor Calculator \u2014 find factors, prime factorization, GCF, LCM, and more",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +11,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "validate:content": "node scripts/validate-content.js",
-    "validate:structure": "node scripts/validate-structure.js"
+    "validate:structure": "node scripts/validate-structure.js",
+    "deploy": "next build && wrangler pages deploy out --project-name=factorcalculator",
+    "preview:cf": "next build && wrangler pages dev out"
   },
   "dependencies": {
     "@next/third-parties": "^16.3.3",
@@ -29,7 +31,8 @@
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
     "postcss": "8.4.49",
-    "tailwindcss": "3.4.16"
+    "tailwindcss": "3.4.16",
+    "wrangler": "^4.131.2"
   },
   "engines": {
     "node": ">=22"

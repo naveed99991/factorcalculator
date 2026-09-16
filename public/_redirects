@@ -1,0 +1,13 @@
+# HCF is the same as GCF — canonical page is /gcf-calculator/
+/hcf-calculator    /gcf-calculator/    301
+/hcf-calculator/   /gcf-calculator/    301
+/hcf               /gcf-calculator/    301
+/hcf/              /gcf-calculator/    301
+
+# Old or alternate paths
+/home       /    301
+/home/      /    301
+/index      /    301
+/index/     /    301
+/factors    /    301
+/factors/   /    301
